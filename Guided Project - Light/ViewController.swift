@@ -10,7 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
+var isLightOn = true
+    @IBAction func buttonPressed(_ sender: Any) {
+        view.backgroundColor = UIColor.black
+        isLightOn = !isLightOn
+    
+    if isLightOn {
+    view.backgroundColor = .white
+} else {
+    view.backgroundColor = .black
+        }
+    }
+    override func viewDidLoad() {	
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -22,4 +33,5 @@ class ViewController: UIViewController {
 
 
 }
+
 
